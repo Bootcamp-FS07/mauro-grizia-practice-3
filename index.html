@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            --size-cell: 3em;
+            --margin-cell: 0.25em;
+            --cells-per-row: 3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .cell-game {
+            display: inline-block;
+            margin: var(--margin-cell);
+            height: calc(var(--size-cell));
+            width: calc(var(--size-cell));
+            min-width: calc(var(--size-cell));
+            min-height: calc(var(--size-cell));
+            background-color: lightgray;
+            vertical-align: middle;
+            line-height: calc(var(--size-cell));
+        }
+
+        #container-game-data, #container-start {
+            text-align: center;
+        }
+
+        #container-game {
+            margin-inline: auto;
+            width: calc(var(--cells-per-row) * (var(--size-cell) + 2 * var(--margin-cell)));
+            max-width: calc(var(--cells-per-row) * (var(--size-cell) + 2 * var(--margin-cell)));
+        }
+
+        #container-game.disabled {
+            color: #0009;
+            filter: blur(5px);
+        }
+
+        @media screen and (max-width: 1800px) {
+            body {
+                --size-cell: 8em;
+                --margin-cell: 0.25em;
+                --cells-per-row: 3;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            body {
+                --size-cell: 5em;
+                --margin-cell: 0.25em;
+                --cells-per-row: 3;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            body {
+                --size-cell: 3em;
+                --margin-cell: 0.25em;
+                --cells-per-row: 3;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container-start">
+        <label for="in-player1">P1:</label>
+        <input
+        placeholder="Mauro"
+        value="Mauro"
+        id="in-player1"
+        />
+        <br/>
+        <label for="in-player1">P2:</label>
+        <input
+            placeholder="Maria"
+            value="Maria"
+            id="in-player2"
+        />
+        <br/>
+        <label for="sl-dimensions">Grid size:</label>
+        <select 
+            id="sl-dimensions"
+        >
+            <option selected>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+        </select>
+        <br/>
+        <button id="bt-start">Start Game</button>
+    </div>
+    
+    <div id="container-game-data" class="hidden">
+        <div>
+            <label id="lb-p1"></label>
+            <br/>
+            <label id="lb-p2"></label>
+        </div>
+        <div id="container-turn" class="hidden">
+            <label id="lb-turn"></label>
+        </div>
+        <button id="bt-start-new">Start new game</button>
+        <br/>
+        <button id="bt-restart">Restart scores</button>
+        <div id="container-game"></div>
+    </div>
+
+    <!-- <a href="game.html">GAME</a> -->
+    
+    <script src="./models/model.js" crossorigin="anonymous"></script>
+    <script src="./views/view.js" crossorigin="anonymous"></script>
+    <script src="./index.js" crossorigin="anonymous"></script>
+</body>
+</html>

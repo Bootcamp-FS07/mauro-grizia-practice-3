@@ -1,23 +1,23 @@
-# practice-3
+# Use
+1. Open the index.html on the browser
+2. (OPTIONAL) Enter each player's name.
+3. (OPTIONAL) Select grid size. By default is 3
+4. Click on Start Game
 
-Create a tic tac toe game
+## To play
+Click on any grid. It will show an icon and the player's turn will change. Current player's turn is shown on the label "Turn player: X".
 
+Play until having <GRID_SIZE> icons in a row or filling the entire grid. If grid is full and no winner is shown, the result will be a tie.
 
-### Requirements
+When game ends, interactions with grid will be disabled. To start a new game click on "Start a new Game". This will start a new game and, if a winner was decided on last game, then the score labels will be updated.
 
-1. Display a 3x3 grid UI by default.
-2. Allow players to input "Player 1" and "Player 2" names.
-3. Provide the option to start a new game.
-4. Enable players to make moves and alternate turns.
-5. When the game ends, display a message indicating the winner's name or if it is a tie.
-6. The application must be responssive for mobile and tablet devices.
+If players want to start again with their scores restarted, then click on Restart scores.
+
+If players want to play on a new grid size then refresh the site.
+
+# Technologies used
+* Vainilla javascript ES6
+* CSS3
 
 ### Desirable
-7. Add the ability to select the table dimensions, such as 3x3, 4x4, 5x5, etc.
-8. Display the players' scores. Each time a player wins, 1 point will be added to their score. The total score for each player should be shown until the game is reset, at which point the scores will return to 0 for both players.
-9. Host the project in Firebase, GitHub pages, or another tool.
-
-
-Update the README file to include detailed instructions for running the project and a complete list of the tools used.
-
-**Deadline: Thursday, January 9th 2024.**
+1. Host the project in Firebase, GitHub pages, or another tool.
