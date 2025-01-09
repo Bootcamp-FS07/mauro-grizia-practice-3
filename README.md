@@ -18,6 +18,3 @@ If players want to play on a new grid size then refresh the site.
 # Technologies used
 * Vainilla javascript ES6
 * CSS3
-
-### Desirable
-1. Host the project in Firebase, GitHub pages, or another tool.
