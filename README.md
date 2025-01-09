@@ -1,5 +1,5 @@
 # Use
-1. Open the index.html on the browser
+1. Open the index.html on the browser or [visit this website in GitHub Pages](https://bootcamp-fs07.github.io/mauro-grizia-practice-3/)
 2. (OPTIONAL) Enter each player's name.
 3. (OPTIONAL) Select grid size. By default is 3
 4. Click on Start Game
